@@ -1,6 +1,6 @@
 // Como frontend e backend ficam no mesmo domínio,
 // usamos uma rota relativa e não http://localhost:3000.
-const API_URL = 'http://localhost:3000/tarefas';
+const API_URL = '/tarefas';
 
 const form = document.querySelector('#form-tarefa');
 const inputTitulo = document.querySelector('#titulo');
