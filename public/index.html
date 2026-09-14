@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projeto Exemplo | Tarefas</title>
+
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <main class="container">
+    <header class="topo">
+      <div>
+        <p class="etiqueta">PROJETO EXEMPLO</p>
+        <h1>Gerenciador de Tarefas</h1>
+        <p class="subtitulo">
+          Front-end + NestJS + MySQL funcionando no mesmo projeto.
+        </p>
+      </div>
+
+      <div class="status">
+        <span class="status-bolinha"></span>
+        <span>Aplicação conectada</span>
+      </div>
+    </header>
+
+    <section class="painel">
+      <div class="formulario-bloco">
+        <h2>Nova tarefa</h2>
+
+        <form id="form-tarefa">
+          <label for="titulo">Título</label>
+          <input
+            id="titulo"
+            name="titulo"
+            type="text"
+            maxlength="150"
+            placeholder="Ex.: Testar publicação"
+            required
+          />
+
+          <label for="descricao">Descrição</label>
+          <textarea
+            id="descricao"
+            name="descricao"
+            maxlength="255"
+            placeholder="Descreva a tarefa..."
+          ></textarea>
+
+          <button type="submit">Cadastrar tarefa</button>
+        </form>
+
+        <p id="mensagem" class="mensagem"></p>
+      </div>
+
+      <div class="lista-bloco">
+        <div class="lista-cabecalho">
+          <div>
+            <h2>Tarefas cadastradas</h2>
+            <p>Os registros abaixo são carregados diretamente do MySQL.</p>
+          </div>
+
+          <button id="btn-atualizar" class="botao-secundario" type="button">
+            Atualizar
+          </button>
+        </div>
+
+        <div id="lista-tarefas" class="lista-tarefas">
+          <p class="carregando">Carregando tarefas...</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Projeto didático para demonstração de publicação.
+    </footer>
+  </main>
+
+  <script src="javascript/script.js"></script>
+</body>
+</html>
